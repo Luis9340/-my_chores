@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 4.70rem;
+}
+
+.my-text {
+    color: #1ED69F;
+}
+
+.dot-text {
+    color: #FF9900;
+}
+
+.container {
+    background-color: #1D1C1B;
+    width: 37.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 80px 1px rgba(214, 150, 30);
+}
+
+.input-task {
+    font-family: 'Roboto', sans-serif;
+    color: #1D1C1B;
+    font-weight: normal;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 5rem;
+}
+
+.input-task::placeholder {
+    color: #8F8F8F;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #24A57E;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    padding: 0.2rem 1.4rem 0.30rem 1.4rem;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+.button-add-task:hover {
+    background-color: #1ED69F;
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 1.8rem;
+}
+
+.task {
+    background-color: #fff;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    height: 3rem;
+    padding: 0.4rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-bottom: 1.25rem;
+    
+}
+
+.done {
+    background-color: #24A57E;
+    text-decoration: line-through;
+}
+
+p {
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.task svg {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.task svg:hover {
+    opacity: 1;
+    
+}
+
+.task svg:hover {
+    animation: inflate 0.3s ease;
+}
+
+@keyframes inflate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+
